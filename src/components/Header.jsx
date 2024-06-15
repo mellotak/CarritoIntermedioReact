@@ -1,0 +1,14 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Header = ({ cartCount }) => (
+  <header className="header">
+    <h1>Aplicación de Carrito de Compras</h1>
+    <nav>
+      <Link to="/">Inicio</Link>
+      <Link to="/cart">Carrito ({cartCount})</Link>
+    </nav>
+  </header>
+);
+
+export default Header;
